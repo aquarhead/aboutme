@@ -1,0 +1,103 @@
+@charset "utf-8";
+@import "normalize";
+@import 'https://fonts.googleapis.com/css?family=Alegreya+SC|Gilda+Display|Tangerine';
+
+$color-shironeri: #FCFAF2; // 白練
+$color-sakura: #FEDFE1; // 桜
+$color-mizuasagi: #66BAB7; // 水浅葱
+$color-mizu: #81C7D4; // 水
+$color-asagi: #33A6B8; // 浅葱
+$color-sora: #58B2DC; // 空
+$color-gunjyo: #51A8DD; // 群青
+$color-wasurenagusa: #7DB9DE; // 勿忘草
+$color-ruri: #005CAF; // 瑠璃
+$color-hai: #828282; // 灰
+$color-kuro: #080808; // 黒
+$color-sumi: #1C1C1C; // 墨
+
+body {
+  margin: 2em 0 0 2em;
+  background: $color-shironeri;
+  font-family: "Gilda Display", "Klinic Slab", serif;
+  font-size: 1em;
+}
+
+h1 {
+  color: $color-kuro;
+  font-family: "Alegreya SC", "Klinic Slab", serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 0;
+
+  small {
+    font-family: "Tangerine", "Klinic Slab", serif;
+    color: $color-wasurenagusa;
+    font-size: 0.8em;
+    font-weight: normal;
+  }
+}
+
+
+h2 {
+  font-family: "Alegreya SC", "Klinic Slab", serif;
+  margin: 1em 0 0.3em 0;
+}
+
+.iam {
+  h3 {
+    color: $color-hai;
+    font-size: 0.9em;
+    font-weight: lighter;
+    margin: 0px;
+  }
+}
+
+code {
+  font-family: "Fira Code", "Menlo", monospace;
+  font-size: 0.8em;
+
+  a, a:visited {
+    text-decoration: none;
+  }
+}
+
+.job {
+  code {
+    a, a:visited {
+      color: $color-gunjyo;
+    }
+  }
+}
+
+.indie {
+  code {
+    a.wizard, a.wizard:visited {
+      color: $color-sora;
+    }
+
+    a.ela, a.ela:visited {
+      color: $color-ruri;
+    }
+  }
+}
+
+.doc {
+  margin: 3em 0;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+
+  a {
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 0.75em 0.7em;
+    color: white;
+    text-decoration: none;
+    transition: color 0.1s linear;
+    &:hover {
+      background: rgba(0,0,0,0.2);
+      color: white;
+      transition: all 0.15s linear;
+    }
+  }
+}
