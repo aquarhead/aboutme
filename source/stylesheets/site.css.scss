@@ -1,6 +1,6 @@
 @charset "utf-8";
 @import "normalize";
-@import 'https://fonts.googleapis.com/css?family=Alegreya+SC|Merriweather|Tangerine';
+@import 'https://fonts.googleapis.com/css?family=Alegreya+SC|Merriweather|Tangerine|Fira+Mono';
 
 $color-shironeri: #FCFAF2; // 白練
 $color-sakura: #FEDFE1; // 桜
@@ -61,7 +61,7 @@ a, a:visited {
 }
 
 code {
-  font-family: "Fira Code", "Menlo", monospace;
+  font-family: "Fira Code", "Menlo", "Fira Mono", monospace;
   font-size: 1em;
 }
 
