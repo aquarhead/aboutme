@@ -1,7 +1,9 @@
 @charset "utf-8";
 @import "normalize";
-@import 'https://fonts.googleapis.com/css?family=Alegreya+SC|Merriweather|Tangerine|Fira+Mono';
+@import "https://fonts.googleapis.com/css?family=Alegreya+SC|Merriweather|Tangerine|Fira+Mono";
+@import "https://fonts.googleapis.com/earlyaccess/hannari.css";
 
+// Colors
 $color-shironeri: #FCFAF2; // 白練
 $color-sakura: #FEDFE1; // 桜
 $color-mizuasagi: #66BAB7; // 水浅葱
@@ -15,22 +17,28 @@ $color-hai: #828282; // 灰
 $color-kuro: #080808; // 黒
 $color-sumi: #1C1C1C; // 墨
 
+// Fonts
+$font-default: "Merriweather", "Klinic Slab", "Hannari", serif;
+$font-title: "Alegreya SC", "Klinic Slab", serif;
+$font-nickname: "Tangerine", "Klinic Slab", serif;
+$font-code: "Fira Code", "Menlo", "Fira Mono", monospace;
+
 body {
   margin: 4em 0 0 2em;
   background: $color-shironeri;
-  font-family: "Merriweather", "Klinic Slab", serif;
+  font-family: $font-default;
   font-size: 1em;
 }
 
 h1 {
   color: $color-kuro;
-  font-family: "Alegreya SC", "Klinic Slab", serif;
+  font-family: $font-title;
   font-size: 2.5em;
   font-weight: bold;
   margin: 0;
 
   small {
-    font-family: "Tangerine", "Klinic Slab", serif;
+    font-family: $font-nickname;
     color: $color-wasurenagusa;
     font-size: 0.8em;
     font-weight: normal;
@@ -48,7 +56,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Alegreya SC", "Klinic Slab", serif;
+  font-family: $font-title;
   margin: 1em 0 0.3em 0;
 }
 
@@ -61,7 +69,7 @@ a, a:visited {
 }
 
 code {
-  font-family: "Fira Code", "Menlo", "Fira Mono", monospace;
+  font-family: $font-code;
   font-size: 1em;
 }
 
@@ -86,7 +94,7 @@ code {
 }
 
 ul {
-  font-family: "Merriweather", "Klinic Slab", serif;
+  font-family: $font-default;
   font-size: 1.1em;
   list-style-type: hiragana;
   padding-left: 2em;
