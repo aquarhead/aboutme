@@ -18,10 +18,17 @@ $color-kuro: #080808; // 黒
 $color-sumi: #1C1C1C; // 墨
 
 // Fonts
+@font-face {
+  font-family: "Fira Code";
+  src:
+    local("Fira Code"),
+    url("https://cdn.rawgit.com/tonsky/FiraCode/master/distr/ttf/FiraCode-Regular.ttf")
+    format("truetype");
+}
 $font-default: "Merriweather", "Klinic Slab", "Hannari", serif;
 $font-title: "Alegreya SC", "Klinic Slab", serif;
 $font-nickname: "Tangerine", "Klinic Slab", serif;
-$font-code: "Fira Code", "Menlo", "Fira Mono", monospace;
+$font-code: "Fira Code", monospace;
 
 body {
   margin: 4em 0 0 2em;
