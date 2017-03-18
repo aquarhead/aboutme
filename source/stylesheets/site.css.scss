@@ -1,6 +1,6 @@
 @charset "utf-8";
 @import "normalize";
-@import "https://fonts.googleapis.com/css?family=Alegreya+SC|Merriweather|Tangerine|Fira+Mono";
+@import "https://fonts.googleapis.com/css?family=Alegreya+SC|Merriweather|Tangerine";
 @import "https://fonts.googleapis.com/earlyaccess/hannari.css";
 
 // Colors
@@ -25,9 +25,9 @@ $color-sumi: #1C1C1C; // 墨
     url("https://cdn.rawgit.com/tonsky/FiraCode/master/distr/ttf/FiraCode-Regular.ttf")
     format("truetype");
 }
-$font-default: "Merriweather", "Klinic Slab", "Hannari", serif;
-$font-title: "Alegreya SC", "Klinic Slab", serif;
-$font-nickname: "Tangerine", "Klinic Slab", serif;
+$font-default: "Merriweather", "Hannari", serif;
+$font-title: "Alegreya SC", serif;
+$font-nickname: "Tangerine", serif;
 $font-code: "Fira Code", monospace;
 
 body {
